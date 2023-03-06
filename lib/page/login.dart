@@ -18,22 +18,31 @@ class Login extends StatelessWidget {
                     minHeight: viewportConstraints.maxHeight,
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 600),
+                    padding: const EdgeInsets.only(top: 500),
                     child: Column(
-                      children: const [
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 20),
+                      children:[
+                        const Padding(
+                          padding: EdgeInsets.only(bottom: 20),
                           child: TextField(
                             decoration: InputDecoration(
                               hintText: ('email'),
                             ),
                           ),
                         ),
-                        TextField(
-                          decoration: InputDecoration(
-                            hintText: ('password'),
+                        const Padding(
+                          padding: EdgeInsets.only(bottom: 20),
+                          child: TextField(
+                            decoration: InputDecoration(
+                              hintText: ('password'),
+                            ),
                           ),
-                        )
+                        ),
+                        OutlinedButton(
+                          onPressed: () {
+                            debugPrint('Entrando');
+                          },
+                          child: const Text('Login'),
+                        ),
                       ],
                     ),
                   ),

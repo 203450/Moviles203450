@@ -1,6 +1,7 @@
 import 'package:flutter_application_1/screens/components/content_boarding.dart';
 import 'package:flutter/material.dart';
 import '../../page/login.dart';
+import 'package:flutter_application_1/screens/splash_view.dart';
 
 class OnBoarding extends StatefulWidget {
   const OnBoarding({super.key});
@@ -29,27 +30,27 @@ class _OnBoardingState extends State<OnBoarding> {
     {
       "titulo": "ESPARCIMIENTO",
       "imagen": "assets/images/B1.png",
-      "descripcion": "Texto de ejemplo",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed sagittis risus.",
     },
     {
       "titulo": "ADOPCION",
       "imagen": "assets/images/B2.png",
-      "descripcion": "Texto de ejemplo",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       "titulo": "HOSPITALIDAD",
       "imagen": "assets/images/B3.png",
-      "descripcion": "Texto de ejemplo",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       "titulo": "VETERINARIA",
       "imagen": "assets/images/B4.png",
-      "descripcion": "Texto de ejemplo",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
     {
       "titulo": "TIENDA",
       "imagen": "assets/images/B5.png",
-      "descripcion": "Texto de ejemplo",
+      "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
   ];
 

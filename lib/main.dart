@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/page/act01.dart';
-import 'package:flutter_application_1/page/act02.dart';
-import 'package:flutter_application_1/page/act03.dart';
-import 'package:flutter_application_1/page/act04.dart';
 import 'package:flutter_application_1/screens/body_boarding.dart';
-import 'package:flutter_application_1/screens/components/on_boarding.dart';
+  // import 'package:flutter/services.dart';
+  // import 'package:flutter_application_1/screens/splash_view.dart';
+  // import 'package:flutter_application_1/screens/components/on_boarding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blueGrey,
       ),
       home: const BodyBoarding(),
     );

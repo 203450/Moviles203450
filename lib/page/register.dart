@@ -18,9 +18,10 @@ class Register extends StatelessWidget {
                     minHeight: viewportConstraints.maxHeight,
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 50),
+                    padding: const EdgeInsets.only(top: 200),
                     child: Column(
                       children: [
+
                         const Padding(
                           padding: EdgeInsets.only(bottom: 20),
                           child: TextField(
@@ -29,6 +30,7 @@ class Register extends StatelessWidget {
                             ),
                           ),
                         ),
+
                         const Padding(
                           padding: EdgeInsets.only(bottom: 20),
                           child: TextField(
@@ -37,11 +39,12 @@ class Register extends StatelessWidget {
                             ),
                           ),
                         ),
+
                         const Padding(
                           padding: EdgeInsets.only(bottom: 20),
                           child: TextField(
                             decoration: InputDecoration(
-                              hintText: ('Username'),
+                              hintText: ('Email'),
                             ),
                           ),
                         ),
@@ -61,38 +64,35 @@ class Register extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: const [
-                            Padding(
-                              padding: EdgeInsets.only(bottom: 20),
-                              child: SizedBox(
-                                width: 150,
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 20),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: const [
+                              SizedBox(
+                                width: 150.0,
                                 child: TextField(
                                   decoration: InputDecoration(
                                     hintText: ('Year'),
                                   ),
                                 ),
                               ),
-                            ),
-                            Padding(
-                              padding: EdgeInsets.only(bottom: 20),
-                              child: SizedBox(
-                                width: 150,
+                              SizedBox(
+                                width: 150.0,
                                 child: TextField(
                                   decoration: InputDecoration(
                                     hintText: ('Gender'),
                                   ),
                                 ),
-                              ),
-                            ),
-                          ],
+                              )
+                            ],
+                          ),
                         ),
-                        ElevatedButton(
-                          child: const Text('Register'),
+                        OutlinedButton(
                           onPressed: () {
-                            print('Hello');
+                            debugPrint('Cargando login');
                           },
+                          child: const Text('Login'),
                         ),
                       ],
                     ),
